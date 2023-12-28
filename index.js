@@ -10,7 +10,6 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./src/page-template.js");
 
-// TODO: Write Code to gather information about the development team members, and render the HTML file.
 
 // Empty array for team
 let team = [];
@@ -39,4 +38,13 @@ const internQuestions = [
   { type: "input", message: "What's Intern's ID number?", name: "ID" },
   { type: "input", message: "What's Intern's email?", name: "Email" },
   { type: "input", message: "What's Intern's school?", name: "School" },
+];
+
+const addTeamMember = [
+  {
+    type: "list",
+    message: "Please add team members?",
+    name: "addMember",
+    choices: ["Engineer", "Intern", "none"],
+  },
 ];
