@@ -93,6 +93,7 @@ function promptTeamMember() {
       default:
         // If 'none' is selected, generate the HTML and write to file
         const html = render(team);
+        console.log("Generating HTML file...");
         writeToFile("./output/team.html", html);
         break;
     }
