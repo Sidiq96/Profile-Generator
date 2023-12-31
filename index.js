@@ -45,6 +45,7 @@ const internQuestions = [
   { type: "input", message: "What's Intern's school?: ", name: "School" },
 ];
 
+// Array for choosing to add more team members or finish
 const addTeamMember = [
   {
     type: "list",
@@ -54,6 +55,7 @@ const addTeamMember = [
   },
 ];
 
+// Function to add a manager to the team
 function addManager() {
   inquirer.prompt(managerQuestions).then((response) => {
     team.push(
@@ -64,6 +66,7 @@ function addManager() {
   });
 }
 
+// Function to add an engineer to the team
 function addEngineer() {
   inquirer.prompt(engineerQuestions).then((response) => {
     team.push(
@@ -73,6 +76,7 @@ function addEngineer() {
   });
 }
 
+// Function to add an intern to the team
 function addIntern() {
   inquirer.prompt(internQuestions).then((response) => {
     team.push(
@@ -81,6 +85,8 @@ function addIntern() {
     promptTeamMember();
   });
 }
+
+// Function to prompt whether to add more team members or finish
 function promptTeamMember() {
   inquirer.prompt(addTeamMember).then((response) => {
     switch (response.addMember) {
@@ -100,6 +106,7 @@ function promptTeamMember() {
   });
 }
 
+// Function to write data to a file
 function writeToFile(fileName, data) {
   fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
