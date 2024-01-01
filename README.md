@@ -70,7 +70,7 @@ SO THAT I have quick access to their emails and GitHub profiles
 
 ## Installation
 
-To install necessary dependencies, please run the following command: 
+To install the necessary dependencies, please run the following command: 
 
 ```bash
 npm install inquirer
@@ -80,7 +80,7 @@ npm install jest
 ![screenshot of website](./assets/Screenshot%20of%20the%20team%20generator.png)
 
 ## Usage
-This application allows the user to create profiles for members by asking a series of questions which then generates a readme file.
+This application allows the user to create profiles for members by asking a series of questions which then generates an HTML file.
 
 # Credits
 *[W3 School](https://www.w3schools.com/js/default.asp)
