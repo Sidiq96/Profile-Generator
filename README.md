@@ -70,8 +70,12 @@ SO THAT I have quick access to their emails and GitHub profiles
 
 ## Installation
 
-The steps required to access is through this link, 
-By clicking this link will lead to the website and be able to see it. As you can see in the screenshot below.
+To install necessary dependencies, please run the following command: 
+
+```bash
+npm install inquirer
+npm install jest
+```
 
 ![screenshot of website](./assets/Screenshot%20of%20the%20team%20generator.png)
 
